@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Project from './components/Project';
 import ProjectCard from './components/ProjectCard';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import projects from './projects.json';
 
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Nav />
       <main>
+        <ContactForm />
         <About />
         <Project
           {...projectsList.map((project, i) => (

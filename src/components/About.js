@@ -7,7 +7,7 @@ function About() {
                 <div className="flex-container">
                     <div className="name-container">
                         <h1 className="name">JD Rowley</h1>
-                        <h2 className="profession">Full-Stack Web Developer</h2>
+                        <h2 className="profession">Full-Stack{<br/>} Web Developer</h2>
                     </div>
                     <div className="about-container">
                         <div className="about-section">
