@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Tech Blog",
+        "deploy": "https://cryptic-bastion-77900.herokuapp.com/",
+        "github_url": "https://github.com/JD-Rowley/mvc-tech-blog",
+        "github": "Tech Blog",
+        "description": "A blog site where tech enthusiasts can come together and talk about the latest technology.",
+        "languages": "HTML, CSS, Javascript, Express.js, Sequelize, Node.js",
+        "image": "./assets/project_img/tech-blog.JPG"
+    },
+    {
+        "title": " E-Commerce Backend",
+        "deploy": "",
+        "github_url": "https://github.com/JD-Rowley/e-commerce-backend",
+        "github": "E-Commerce Backend",
+        "description": "A working backend for an E-Commerce website.",
+        "languages": "Javascript, Express.js, Sequelize, Node.js",
+        "image": "./assets/project_img/e-commerce-backend.JPG"
+    },
+    {
+        "title": "LocalGrub",
+        "deploy": "https://gelenhaus.github.io/groupProject1/",
+        "github_url": "https://github.com/Gelenhaus/groupProject1",
+        "github": "LocalGrub",
+        "description": "A website designed to cloak domestic violence shelter searches and user requests for 911 assistance.",
+        "languages": "HTML, CSS, Javascript",
+        "image": "./assets/project_img/LocalGrub.JPG"
+    },
+    {
+        "title": "Note-Taker",
+        "deploy": "https://secure-sea-43122.herokuapp.com/",
+        "github_url": "https://github.com/JD-Rowley/express-note-taker",
+        "github": "Express Note Taker",
+        "description": "An app for creating notes.",
+        "languages": "HTML, CSS, Javascript, Express.js",
+        "image": "./assets/project_img/note-taker.JPG"
+    },
+    {
+        "title": "Social Network API",
+        "deploy": "",
+        "github_url": "https://github.com/JD-Rowley/mongo-db-social-network-api",
+        "github": "Social Network API (MongoDB)",
+        "description": "An API for social network application where users can post thoughts and reactions.",
+        "languages": "HTML, CSS, Javascript, Express.js, Mongoose",
+        "image": "./assets/project_img/social-network-api.JPG"
+    },
+    {
+        "title": "Team Profile Generator",
+        "deploy": "",
+        "github_url": "https://github.com/JD-Rowley/team-profile-generator",
+        "github": "Team Profile Generator",
+        "description": "An app that dynamically generates a page for small teams of people at the workplace.",
+        "languages": "HTML, CSS, Javascript, Inquirer",
+        "image": "./assets/project_img/team-profile-generator.JPG"
+    },
+    {
+        "title": "The Dog Dossier",
+        "deploy": "https://the-dog-dossier.herokuapp.com/",
+        "github_url": "https://github.com/JD-Rowley/dog-dossier",
+        "github": "Dog Dossier",
+        "description": "An app for dog owners and lovers to share information with each other.",
+        "languages": "HTML, CSS, Javascript, Express.js, Sequelize",
+        "image": "./assets/project_img/dog-dossier.JPG"
+    }
+]

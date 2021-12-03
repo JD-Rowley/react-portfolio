@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
+import Project from './components/Project';
+import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
-
-// font awesome
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-// import { fas } from '@fortawesome/free-solid-svg-icons';
-
-// fa library
-library.add(fab);
+import projects from './projects.json';
 
 function App() {
+  const [projectsList] = useState(projects);
+
   return (
     <div>
-      <Nav></Nav>
+      <Nav />
       <main>
-        <About></About>
+        <About />
+        <Project
+          {...projectsList.map(project => (
+            <ProjectCard 
+              title={project.title}
+              deploy={project.deploy}
+              github_url={project.github_url}
+              github={project.github}
+              description={project.description}
+              languages={project.languages}
+              image={project.image}
+            />
+          ))}
+        />
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
