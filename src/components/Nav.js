@@ -1,15 +1,20 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+    const tabs = ['Home', 'Portfolio', 'Resume', 'Contact'];
     return (
         <header>
             <div className="nav-wrapper">
                 <nav className="nav-btns">
                     <ul>
-                        <a href="/">Home</a>
-                        <a href="/portfolio.html">Portfolio</a>
-                        <a href="/">Resume</a>
-                        <a href="/">Contact</a>
+                        {tabs.map(tab => (
+                            <a
+                                href={'#' + tab.toLowerCase()}
+                                onClick={() => props.handlePageChange(tab)}
+                            >
+                                {tab}
+                            </a>
+                        ))}
                     </ul>
                 </nav>
             </div>
