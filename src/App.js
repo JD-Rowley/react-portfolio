@@ -15,8 +15,9 @@ function App() {
       <main>
         <About />
         <Project
-          {...projectsList.map(project => (
+          {...projectsList.map((project, i) => (
             <ProjectCard 
+              key={i}
               title={project.title}
               deploy={project.deploy}
               github_url={project.github_url}

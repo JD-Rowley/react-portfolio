@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 
 function Project(props) {
     return(
@@ -21,37 +22,9 @@ function Project(props) {
                 </div>
             </div>
             <div className="projects-container">
-                {props.children}
-                {/* <div className="project-card">
-                    <div className="card-header">
-                        <a href=""><h3>Tech Blog</h3></a>
-                    </div>
-                    <ul>
-                        <li><b>GitHub:</b> <a href="">The Dog Dossier</a></li>
-                        <li><b>Description:</b> A database containing information for dog owners and aspiring dog owners alike.</li>
-                        <li><b>Languages:</b> HTML, CSS, Javascript, Sequelize, Node.js</li>
-                    </ul>
-                </div>
-                <div className="project-card">
-                    <div className="card-header">
-                        <a href=""><h3>Tech Blog</h3></a>
-                    </div>
-                    <ul>
-                        <li><b>GitHub:</b> <a href="">The Dog Dossier</a></li>
-                        <li><b>Description:</b> A database containing information for dog owners and aspiring dog owners alike.</li>
-                        <li><b>Languages:</b> HTML, CSS, Javascript, Sequelize, Node.js</li>
-                    </ul>
-                </div>
-                <div className="project-card">
-                    <div className="card-header">
-                        <a href=""><h3>Tech Blog</h3></a>
-                    </div>
-                    <ul>
-                        <li><b>GitHub:</b> <a href="">The Dog Dossier</a></li>
-                        <li><b>Description:</b> A database containing information for dog owners and aspiring dog owners alike.</li>
-                        <li><b>Languages:</b> HTML, CSS, Javascript, Sequelize, Node.js</li>
-                    </ul>
-                </div> */}
+                <ProjectCard
+                    {...props.children}
+                />
             </div>
         </section>
     );
