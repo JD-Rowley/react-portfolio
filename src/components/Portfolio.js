@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import projects from '../projects.json'
+import projects from './projects.js'
 
 function Project() {
     return(
@@ -8,7 +8,7 @@ function Project() {
             <div className="other-projects">
             <h2>Projects:</h2>
                 <div className="search">
-                    <h3>Search by language:</h3>
+                    <h3>Search by language/tool:</h3>
                     <select name="languages" id="">
                         <option value="">HTML</option>
                         <option value="">CSS</option>

@@ -28,14 +28,16 @@ body {
 /* header */
 
 header {
-  flex: 1;
-  padding: 1rem;
-}
-
-.nav-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-location h1 {
+  background-color: var(--primary);
+  border-bottom-left-radius: 10px;
+  padding: 0.5rem;
 }
 
 .nav-btns ul a {
@@ -196,7 +198,7 @@ header {
   padding: 1rem;
 }
 
-ul li {
+.project-card ul li {
   list-style: none;
   margin: 1rem;
 }
@@ -348,7 +350,44 @@ section {
 
 /* other projects */
 
+/* resume */
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem
+}
+
+.main-body {
+  display: flex;
+  margin: 3rem;
+}
+
+.experience {
+  flex: 3;
+}
+
+.qualifications {
+  flex: 1;
+}
+
+.employer-card {
+  margin: 1rem;
+}
+
+.employer-card ul,
+.skills ul {
+  margin: 0 1rem;
+}
+
+/* resume */
+
 /* contact form */
+
+.contact-container {
+  border-top: 1px solid var(--primary);
+}
 
 .contact-form {
   margin: auto;

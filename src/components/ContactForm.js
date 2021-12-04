@@ -28,8 +28,7 @@ function ContactForm() {
     }
 
     return(
-        <section className="container">
-                <h1>Contact Me:</h1>
+        <section className="container contact-container">
             <div className="flex-container">
                 <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
                         <label htmlFor="name">Name: </label>

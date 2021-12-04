@@ -1,3 +1,14 @@
+import techBlog from '../assets/project_img/tech-blog.JPG';
+import eCommerce from '../assets/project_img/e-commerce-backend.JPG';
+import LocalGrub from '../assets/project_img/LocalGrub.JPG';
+import noteTaker from '../assets/project_img/note-taker.JPG';
+import socialNetwork from '../assets/project_img/social-network-api.JPG';
+import teamProfile from '../assets/project_img/team-profile-generator.JPG';
+import dogDossier from '../assets/project_img/dog-dossier.JPG';
+import weatherImage from '../assets/project_img/weather-dashboard.JPG';
+
+const projects =
+
 [
     {
         "title": "Tech Blog",
@@ -6,7 +17,7 @@
         "github": "mvc-tech-blog",
         "description": "A blog site where tech enthusiasts can come together and talk about the latest technology.",
         "languages": "HTML, CSS, Javascript, Express.js, Sequelize, Node.js",
-        "image": "../assets/project_img/tech-blog.JPG"
+        "image": techBlog
     },
     {
         "title": " E-Commerce Backend",
@@ -15,7 +26,7 @@
         "github": "e-commerce-backend",
         "description": "A working backend for an E-Commerce website.",
         "languages": "Javascript, Express.js, Sequelize, Node.js",
-        "image": "./assets/project_img/e-commerce-backend.JPG"
+        "image": eCommerce
     },
     {
         "title": "LocalGrub",
@@ -24,7 +35,7 @@
         "github": "LocalGrub",
         "description": "A website designed to cloak domestic violence shelter searches and user requests for 911 assistance.",
         "languages": "HTML, CSS, Javascript",
-        "image": "./assets/project_img/LocalGrub.JPG"
+        "image": LocalGrub
     },
     {
         "title": "Note-Taker",
@@ -33,7 +44,7 @@
         "github": "express-note-taker",
         "description": "An app for creating notes.",
         "languages": "HTML, CSS, Javascript, Express.js",
-        "image": "./assets/project_img/note-taker.JPG"
+        "image": noteTaker
     },
     {
         "title": "Social Network API",
@@ -42,7 +53,7 @@
         "github": "mongo-db-social-network-api",
         "description": "An API for social network application where users can post thoughts and reactions.",
         "languages": "HTML, CSS, Javascript, Express.js, Mongoose",
-        "image": "./assets/project_img/social-network-api.JPG"
+        "image": socialNetwork
     },
     {
         "title": "Team Profile Generator",
@@ -51,7 +62,7 @@
         "github": "team-profile-generator",
         "description": "An app that dynamically generates a page for small teams of people at the workplace.",
         "languages": "HTML, CSS, Javascript, Inquirer",
-        "image": "./assets/project_img/team-profile-generator.JPG"
+        "image": teamProfile
     },
     {
         "title": "The Dog Dossier",
@@ -60,7 +71,7 @@
         "github": "dog-dossier",
         "description": "An app for dog owners and lovers to share information with each other.",
         "languages": "HTML, CSS, Javascript, Express.js, Sequelize",
-        "image": "./assets/project_img/dog-dossier.JPG"
+        "image": dogDossier
     },
     {
         "title": "Weather Dashboard",
@@ -69,6 +80,8 @@
         "github": "weather-dashboard",
         "description": "An app using third-party APIs to help travelers find weather information in their area.",
         "languages": "HTML, CSS, Javascript",
-        "image": "./assets/project_img/weather-dashboard.JPG"
+        "image": weatherImage
     }
 ]
+
+export default projects;
