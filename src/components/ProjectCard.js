@@ -6,7 +6,9 @@ function ProjectCard(props) {
         <div className="project-card">
             <div className="card-header">
                 <a href={props.deploy}><h3>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3></a>
-                <img src={props.image} maxHeight="150px" width="100%" alt={props.title} key={props.title} />
+                <div className="image-container">
+                    <img src={props.image} width="100%" alt={props.title} key={props.title} />
+                </div>
             </div>
             <ul>
                 <li><b>GitHub:</b> <a href={props.github_url}>{props.github}</a></li>
