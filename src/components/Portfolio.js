@@ -6,7 +6,7 @@ function Project() {
     return(
         <section className="container">
             <div className="other-projects">
-            <h2>Other projects:</h2>
+            <h2>Projects:</h2>
                 <div className="search">
                     <h3>Search by language:</h3>
                     <select name="languages" id="">

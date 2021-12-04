@@ -11,6 +11,7 @@ function Nav(props) {
                             <a
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}
+                                key={tab}
                             >
                                 {tab}
                             </a>

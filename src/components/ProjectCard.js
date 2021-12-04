@@ -1,10 +1,11 @@
 import React from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function ProjectCard(props) {
     return(
         <div className="project-card">
             <div className="card-header">
-                <a href={props.deploy}><h3>{props.title}</h3></a>
+                <a href={props.deploy}><h3>{props.title} <FaExternalLinkAlt /></h3></a>
             </div>
             <ul>
                 <div>
