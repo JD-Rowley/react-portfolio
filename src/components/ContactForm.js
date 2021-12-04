@@ -28,30 +28,30 @@ function ContactForm() {
     }
 
     return(
-        <section>
-            <h1>Contact Me:</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div className="flex-container">
-                    <div>
+        <section className="container">
+                <h1>Contact Me:</h1>
+            <div className="flex-container">
+                <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
                         <label htmlFor="name">Name: </label>
+                    <div>
                         <input type="text" name="name" defaultValue={name} onChange={handleChange} />
                     </div>
-                    <div>
                         <label htmlFor="email">Email Address: </label>
+                    <div>
                         <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                     </div>
-                </div>
-                <div>
-                    <label htmlFor="message">Message: </label>
-                    <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p>{errorMessage}</p>
+                        <label htmlFor="message">Message: </label>
+                    <div className="message-container">
+                        <textarea name="message" rows="5" cols="50" defaultValue={message} onChange={handleChange} />
                     </div>
-                )}
-                <button type="submit" className="btn submit-btn">Submit</button>
-            </form>
+                    {errorMessage && (
+                        <div>
+                            <p>{errorMessage}</p>
+                        </div>
+                    )}
+                    <button type="submit" className="btn submit-btn">Submit</button>
+                </form>
+            </div>
         </section>
     );
 }

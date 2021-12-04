@@ -1,7 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import projects from '../projects.json'
 
-function Project(props) {
+function Project() {
     return(
         <section className="container">
             <div className="other-projects">
@@ -22,9 +23,18 @@ function Project(props) {
                 </div>
             </div>
             <div className="projects-container">
-                <ProjectCard
-                    {...props.children}
-                />
+                {projects.map(project => (
+                    <ProjectCard 
+                        key={project.title}
+                        title={project.title}
+                        deploy={project.deploy}
+                        github_url={project.github_url}
+                        github={project.github}
+                        description={project.description}
+                        languages={project.languages}
+                        image={project.image}
+                    />
+                ))}
             </div>
         </section>
     );

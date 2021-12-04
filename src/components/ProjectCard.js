@@ -8,7 +8,7 @@ function ProjectCard(props) {
             </div>
             <ul>
                 <div>
-                    <img src={props.image} height="150px" alt={props.title} />
+                    <img src={props.image} height="150px" alt={props.title} key={props.title} />
                 </div>
                 <li><b>GitHub:</b> <a href={props.github_url}>{props.github}</a></li>
                 <li><b>Description: </b>{props.description}</li>
