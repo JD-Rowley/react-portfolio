@@ -24,4 +24,44 @@
   }
   
   /* projects */
+
+  /* media queries */
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 90vw;
+  } 
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    min-height: 65vh;
+  }
+  .flex-container {
+    display: block;
+  }
+  .name-container {
+    height: 20vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: none;
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  .btn {
+    width: 80%;
+    margin: 0 3rem;
+  }
+
+  .flex-container {
+    align-items: center;
+  }
+}
   

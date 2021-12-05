@@ -89,23 +89,27 @@ function Resume() {
                     <div className="languages">
                         <h3 className="languages-header">Languages/Tools</h3>
                         <div className="languages-info">
-                            <p><b>Languages</b></p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>MySQL</li>
-                                <li>RegEx</li>
-                            </ul>
-                            <p><b>Tools</b></p>
-                            <ul>
-                                <li>Third-Party APIs</li>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>MongoDB</li>
-                                <li>Mongoose</li>
-                                <li>React</li>
-                            </ul>
+                            <div>
+                                <p><b>Languages</b></p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>MySQL</li>
+                                    <li>RegEx</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p><b>Tools</b></p>
+                                <ul>
+                                    <li>Third-Party APIs</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>MongoDB</li>
+                                    <li>Mongoose</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -36,11 +36,11 @@
     color: var(--primary);
   }
   
-  .project-card {
+  .project-card a h3 {
     transition: transform 300ms ease-in-out;
   }
   
-  .project-card:hover {
+  .project-card a h3:hover {
     transform:scale(1.1);
   }
 
