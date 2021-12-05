@@ -1,0 +1,53 @@
+/* contact form */
+
+.contact-container {
+    border-top: 1px solid var(--primary);
+  }
+  
+  .contact-form {
+    margin: auto;
+  }
+  
+  .contact-form div input, .contact-form div textarea {
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.5rem;
+    margin: .5rem .5rem .5rem 0;
+  }
+  
+  .submit-btn {
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--secondary);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .submit-btn:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .submit-btn {
+    z-index: 1;
+  }
+  
+  .submit-btn:hover {
+    color: var(--primary);
+  }
+  
+  /* contact form */
+  

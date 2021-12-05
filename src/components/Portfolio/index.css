@@ -1,0 +1,27 @@
+/* projects */
+        
+  section {
+    margin: 3rem 0 3rem 0;
+  }
+  
+  .other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary);
+  }
+  
+  .other-projects h2 {
+    font-weight: lighter;
+    padding: 1rem;
+  }
+      
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    margin: 3rem;
+  }
+  
+  /* projects */
+  

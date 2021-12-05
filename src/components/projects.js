@@ -79,7 +79,7 @@ const projects =
         "github_url": "https://github.com/JD-Rowley/weather-dashboard",
         "github": "weather-dashboard",
         "description": "An app using third-party APIs to help travelers find weather information in their area.",
-        "languages": "HTML, CSS, Javascript",
+        "languages": "HTML, CSS, Javascript, APIs",
         "image": weatherImage
     }
 ]

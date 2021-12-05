@@ -1,0 +1,33 @@
+/* resume */
+
+.resume-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem
+  }
+  
+  .main-body {
+    display: flex;
+    margin: 3rem;
+  }
+  
+  .experience {
+    flex: 3;
+  }
+  
+  .qualifications {
+    flex: 1;
+  }
+  
+  .employer-card {
+    margin: 1rem;
+  }
+  
+  .employer-card ul,
+  .skills ul {
+    margin: 0 1rem;
+  }
+  
+  /* resume */
+  

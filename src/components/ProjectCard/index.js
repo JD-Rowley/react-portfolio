@@ -1,11 +1,12 @@
 import React from 'react';
+import './index.css';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function ProjectCard(props) {
     return(
         <div className="project-card">
             <div className="card-header">
-                <a href={props.deploy}><h3>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3></a>
+                <a href={props.deploy} target="_blank" rel="noreferrer"><h3>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3></a>
                 <div className="image-container">
                     <img src={props.image} width="100%" alt={props.title} key={props.title} />
                 </div>

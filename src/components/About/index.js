@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 function About() {
     return (
@@ -14,9 +15,6 @@ function About() {
                             <h3>About Me:</h3>
                             <p>My name is Jesse Rowley and I am a Full-Stack Web Developer. I prefer to go by the name JD. With a degree in Fine Art, I am especially skilled in web design. As such, I tend to gravitate toward front-end development, although, I do have a particularly soft spot for database creation.</p>
                         </div>
-                        <div className="portfolio-btn-container">
-                            <button className="btn portfolio-btn">View Portfolio</button>
-                        </div>  
                     </div>  
                 </div>
             </div>

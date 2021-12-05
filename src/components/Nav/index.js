@@ -1,7 +1,8 @@
 import React from 'react';
+import './index.css';
 
 function Nav(props) {
-    const tabs = ['Home', 'Portfolio', 'Resume', 'Contact'];
+    const tabs = ['About', 'Portfolio', 'Resume', 'Contact'];
 
     return (
         <header>
