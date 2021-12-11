@@ -6,6 +6,10 @@ import socialNetwork from '../assets/project_img/social-network-api.JPG';
 import teamProfile from '../assets/project_img/team-profile-generator.JPG';
 import dogDossier from '../assets/project_img/dog-dossier.JPG';
 import weatherImage from '../assets/project_img/weather-dashboard.JPG';
+import runBuddy from '../assets/project_img/run-buddy.JPG';
+import codeQuiz from '../assets/project_img/code-quiz.JPG';
+import passwordGenerator from '../assets/project_img/password-generator.JPG';
+import deepThoughts from '../assets/project_img/deep-thoughts.JPG';
 
 const projects =
 
@@ -81,6 +85,42 @@ const projects =
         "description": "An app using third-party APIs to help travelers find weather information in their area.",
         "languages": "HTML, CSS, Javascript, APIs",
         "image": weatherImage
+    },
+    {
+        "title": "Run Buddy",
+        "deploy": "https://jd-rowley.github.io/run-buddy/",
+        "github_url": "https://github.com/JD-Rowley/run-buddy",
+        "github": "run-buddy",
+        "description": "A website promoting a gym membership with personal trainers.",
+        "languages": "HTML, CSS",
+        "image": runBuddy
+    },
+    {
+        "title": "Code Quiz",
+        "deploy": "https://jd-rowley.github.io/code-quiz/",
+        "github_url": "https://github.com/JD-Rowley/code-quiz",
+        "github": "code-quiz",
+        "description": "A webpage with a timed quiz about coding.",
+        "languages": "HTML, CSS, Javascript",
+        "image": codeQuiz
+    },
+    {
+        "title": "Password Generator",
+        "deploy": "https://jd-rowley.github.io/password-generator/",
+        "github_url": "https://github.com/JD-Rowley/password-generator",
+        "github": "password-generator",
+        "description": "A webpage that accepts certain parameters to create a password.",
+        "languages": "HTML, CSS, Javascript",
+        "image": passwordGenerator
+    },
+    {
+        "title": "Deep Thoughts",
+        "deploy": "https://fast-eyrie-29672.herokuapp.com/",
+        "github_url": "https://github.com/JD-Rowley/deep-thoughts",
+        "github": "deep-thoughts",
+        "description": "Deep Thoughts is a social media application where users can share their own thoughts and react to others' thoughts.",
+        "languages": "HTML, CSS, Javascript, MongoDB, Express.js, React, GraphQL",
+        "image": deepThoughts
     }
 ]
 
