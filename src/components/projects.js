@@ -1,3 +1,4 @@
+import permacultureExchange from '../assets/project_img/permaculture-exchange.JPG'
 import techBlog from '../assets/project_img/tech-blog.JPG';
 import eCommerce from '../assets/project_img/e-commerce-backend.JPG';
 import LocalGrub from '../assets/project_img/LocalGrub.JPG';
@@ -15,6 +16,33 @@ const projects =
 
 [
     {
+        "title": "Utah Permaculture Exchange",
+        "deploy": "https://permaculture-exchange.herokuapp.com/",
+        "github_url": "https://github.com/JD-Rowley/permaculture-exchange",
+        "github": "permaculture-exchange",
+        "description": "A website for a non-profit where the community can trade useful items with each other.",
+        "languages": "HTML, CSS, Javascript, React.js, GraphQL, Node.js",
+        "image": permacultureExchange
+    },
+    {
+        "title": "The Dog Dossier",
+        "deploy": "https://the-dog-dossier.herokuapp.com/",
+        "github_url": "https://github.com/JD-Rowley/dog-dossier",
+        "github": "dog-dossier",
+        "description": "An app for dog owners and lovers to share information with each other.",
+        "languages": "HTML, CSS, Javascript, Express.js, Sequelize",
+        "image": dogDossier
+    },
+    {
+        "title": "LocalGrub",
+        "deploy": "https://gelenhaus.github.io/groupProject1/",
+        "github_url": "https://github.com/Gelenhaus/groupProject1",
+        "github": "LocalGrub",
+        "description": "A website designed to cloak domestic violence shelter searches and user requests for 911 assistance.",
+        "languages": "HTML, CSS, Javascript",
+        "image": LocalGrub
+    },
+    {
         "title": "Tech Blog",
         "deploy": "https://cryptic-bastion-77900.herokuapp.com/",
         "github_url": "https://github.com/JD-Rowley/mvc-tech-blog",
@@ -31,15 +59,6 @@ const projects =
         "description": "A working backend for an E-Commerce website.",
         "languages": "Javascript, Express.js, Sequelize, Node.js",
         "image": eCommerce
-    },
-    {
-        "title": "LocalGrub",
-        "deploy": "https://gelenhaus.github.io/groupProject1/",
-        "github_url": "https://github.com/Gelenhaus/groupProject1",
-        "github": "LocalGrub",
-        "description": "A website designed to cloak domestic violence shelter searches and user requests for 911 assistance.",
-        "languages": "HTML, CSS, Javascript",
-        "image": LocalGrub
     },
     {
         "title": "Note-Taker",
@@ -67,15 +86,6 @@ const projects =
         "description": "An app that dynamically generates a page for small teams of people at the workplace.",
         "languages": "HTML, CSS, Javascript, Inquirer",
         "image": teamProfile
-    },
-    {
-        "title": "The Dog Dossier",
-        "deploy": "https://the-dog-dossier.herokuapp.com/",
-        "github_url": "https://github.com/JD-Rowley/dog-dossier",
-        "github": "dog-dossier",
-        "description": "An app for dog owners and lovers to share information with each other.",
-        "languages": "HTML, CSS, Javascript, Express.js, Sequelize",
-        "image": dogDossier
     },
     {
         "title": "Weather Dashboard",
