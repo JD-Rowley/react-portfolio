@@ -1,28 +1,55 @@
 /* resume */
 
-.resume-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem
+a {
+  text-decoration: none;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+  .resume-header h1 {
+    text-align: center;
+    border-bottom: solid 1px var(--primary);
+    padding: 1rem;
   }
+
+  .resume-contact {
+    border-bottom: solid 1px var(--primary);
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .contact-info p a:hover {
+    color: var(--primary);
+  }  
 
   .resume-body {
     display: flex;
   }
-  
-  .main-body {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    margin: 3rem;
+
+  .skills {
+    padding: 1rem;
   }
-    
-  .qualifications {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  .projects-card {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .projects-card p a:hover {
+    color: var(--primary);
+  }
+
+  .projects-list {
+    padding: 1rem;
   }
 
   .skills-info, 
@@ -52,10 +79,11 @@
 
   .experience-header, 
   .education-header, 
-  .skills-header, 
-  .languages-header {
+  .skills-header,
+  .projects-header {
     border-bottom: 1px solid var(--primary);
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   /* resume */

@@ -13,7 +13,8 @@ function About() {
                     <div className="about-container">
                         <div className="about-section">
                             <h3>About Me:</h3>
-                            <p>My name is Jesse Rowley and I am a Full-Stack Web Developer. I prefer to go by the name JD. With a degree in Fine Art, I am especially skilled in web design. As such, I tend to gravitate toward front-end development, although, I do have a particularly soft spot for database creation.</p>
+                            <p>Full stack web developer with graphic design experience educated at Southern Utah University and University of Utah. 
+                                Recently earned a certificate in full stack web development from University of Utah with newly developed skills in JavaScript, CSS, React.js and more.</p>
                         </div>
                     </div>  
                 </div>
