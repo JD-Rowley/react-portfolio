@@ -9,7 +9,7 @@ function Footer() {
         <footer>
             <div className="footer-wrapper">
                 <a href="https://www.facebook.com/jesse.rowley.3/" className="fa-icon" ><FaFacebook /></a>
-                <a href="https://www.linkedin.com/in/jesserowley3dart/" className="fa-icon" ><FaLinkedin /></a>
+                <a href="https://www.linkedin.com/in/jd-rowley/" className="fa-icon" ><FaLinkedin /></a>
                 <a href="https://github.com/JD-Rowley" className="fa-icon" ><FaGithub /></a>
             </div>
         </footer>
