@@ -1,11 +1,5 @@
 /* carousel item */
 
-.slides {
-  display: flex;
-  transition: transform .5s;
-  transform: translateX(calc(-100% * var(--current-slide)))
-}
-
 .slide {
   flex: 0 0 100%;
   display: flex;
@@ -25,17 +19,13 @@ ul li {
   margin: 1rem;
 }
 
-ul li b {
-  color: var(--primary);
-}
-
 .slide ul {
   margin: auto;
   text-align: left;
 }
 
 .slide-img {
-  max-width: 75%;
+  max-width: 65%;
   height: auto;
 }
 
