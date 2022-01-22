@@ -1,24 +1,11 @@
 import React from 'react';
-import Carousel from '../Carousel';
-import ProjectCard from '../ProjectCard';
-import projects from '../projects.js';
-import './index.css';
+import Carousel from '../components/Carousel';
+import ProjectCard from '../components/ProjectCard';
+import projects from '../components/projects.js';
 
 function Project() {
     return(
         <section className="container">
-            {projects.slice(0, 3).map(project => (
-                <Carousel 
-                    key={project.title}
-                    title={project.title}
-                    deploy={project.deploy}
-                    github_url={project.github_url}
-                    github={project.github}
-                    description={project.description}
-                    languages={project.languages}
-                    image={project.image}
-                />            
-            ))}
             <div className="other-projects">
             <h2>Projects:</h2>
             </div>

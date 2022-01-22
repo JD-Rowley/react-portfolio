@@ -1,6 +1,5 @@
 import React from 'react';
-import resume from '../../assets/resume/Jesse-Rowley-Resume.pdf'
-import './index.css';
+import resume from '../assets/resume/Jesse-Rowley-Resume.pdf'
 
 function Resume() {
     return(

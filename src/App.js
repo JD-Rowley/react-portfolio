@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import ContactForm from './components/ContactForm';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         );
       case 'Contact':
         return(
-          <ContactForm />
+          <Contact />
         );
       case 'Resume':
         return(

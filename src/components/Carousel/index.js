@@ -1,30 +1,25 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
-import { FaChevronLeft } from 'react-icons/fa';
-import { FaChevronRight } from 'react-icons/fa';
+import ResponsiveCarousel from 'react-responsive-carousel';
+import CarouselItem from '../CarouselItem';
+import projects from '../../components/projects.js';
 import './index.css';
 
-function Carousel(props) {
+function Carousel() {
     return (
-        <div className='flex-container'>
-            <div className='carousel'>
-                <a className='fas fa-chevron-left slide-btn prev'><FaChevronLeft /></a>
-                <div className='carousel-container'>
-                    <div className='slides'>
-                        <div id='feature-el' className='slide fade'>
-                            <img src={props.image} className='slide-img' alt={props.title} key={props.title} />
-                            <a href={props.deploy} target='_blank' rel='noreferrer' className='title project'><h3>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3></a>
-                            <ul>
-                                <li><b>GitHub:</b> <a href={props.github_url}>{props.github}</a></li>
-                                <li><b>Description: </b>{props.description}</li>
-                                <li><b>Languages/Tools: </b>{props.languages}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <a className='fas fa-chevron-right slide-btn next'><FaChevronRight /></a>
-            </div>
-        </div>
+        <ResponsiveCarousel showArrows={true}
+            {...projects.slice(0, 3).map(project => (
+                <CarouselItem 
+                    key={project.title}
+                    title={project.title}
+                    deploy={project.deploy}
+                    github_url={project.github_url}
+                    github={project.github}
+                    description={project.description}
+                    languages={project.languages}
+                    image={project.image}
+                />
+            ))}
+        />
     );
 }
 
