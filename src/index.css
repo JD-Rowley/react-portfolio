@@ -126,6 +126,10 @@ section {
   margin: 3rem 0 3rem 0;
 }
 
+.github-link:hover {
+  color: var(--primary);
+}
+
 .other-projects {
   display: flex;
   flex-wrap: wrap;

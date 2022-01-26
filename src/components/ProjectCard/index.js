@@ -12,7 +12,7 @@ function ProjectCard(props) {
                 </div>
             </div>
             <ul>
-                <li><b>GitHub:</b> <a href={props.github_url}>{props.github}</a></li>
+                <li><b>GitHub:</b> <a href={props.github_url} className='github-link'>{props.github}</a></li>
                 <li><b>Description: </b>{props.description}</li>
                 <li><b>Languages/Tools: </b>{props.languages}</li>
             </ul>
