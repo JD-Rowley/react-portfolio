@@ -1,12 +1,12 @@
 import React from 'react';
-import Carousel2 from '../components/Carousel';
+import Carousel from '../components/Carousel';
 import ProjectCard from '../components/ProjectCard';
 import projects from '../components/projects.js';
 
 function Project() {
     return(
         <section className="container">
-            <Carousel2 />
+            <Carousel />
             <div className="other-projects">
             <h2>Projects:</h2>
             </div>

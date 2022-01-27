@@ -25,7 +25,7 @@ function Carousel() {
             <FaChevronLeft className='slide-btn prev' onClick={prevSlide} />
             {projects.slice(0, 3).map((project, index) => {
                 return (
-                    <div className={index === current ? 'slide-active fade' : 'slide-inactive fade'} key={index}>
+                    <div className={index === current ? 'slide-active slide' : 'slide-inactive slide'} key={index}>
                         {index === current && (
                             <CarouselItem 
                                 key={project.title}
