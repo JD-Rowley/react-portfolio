@@ -10,7 +10,6 @@ function ContactForm() {
     function handleChange(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
-            console.log(isValid);
             if (!isValid) {
                 setErrorMessage('Your email is invalid!');
             } else {
@@ -48,7 +47,7 @@ function ContactForm() {
                             <p>{errorMessage}</p>
                         </div>
                     )}
-                    <button type="submit" className="btn submit-btn">Submit</button>
+                    <button type="submit" className="btn submit-btn" onSubmit={handleSubmit}>Submit</button>
                 </form>
             </div>
         </section>
