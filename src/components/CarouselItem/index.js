@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function CarouselItem(props) {
     return (
-        <div id='feature-el' className='feature-el'>
+        <div id='feature-el' className='slide'>
             <a href={props.deploy} target='_blank' rel='noreferrer' className='title-link'>
                 <h3 className='project-title'>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3>
                 <img src={props.image} className='slide-img' alt={props.title} key={props.title} />
