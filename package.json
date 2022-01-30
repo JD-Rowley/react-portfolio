@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "aws s3 sync build/ s3://jd-rowley.com",
-    "deploy2": "gh-pages -d build"
+    "deploy2": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
