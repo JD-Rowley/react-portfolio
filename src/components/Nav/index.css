@@ -1,0 +1,44 @@
+/* header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .page-location h1 {
+    background-color: var(--primary);
+    border-bottom-left-radius: 10px;
+    padding: 0.5rem;
+  }
+  
+  .nav-btns ul a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .nav-btns ul a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary);
+    border-bottom-left-radius: 10px;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .nav-btns ul a:hover::before {
+    transform: scaleY(1);
+  }
+  
+  /* header */
+  
