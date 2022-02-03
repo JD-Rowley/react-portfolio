@@ -1,5 +1,6 @@
 {
   "name": "react-portfolio",
+  "main": "index.html",
   "version": "0.1.0",
   "homepage": "http://jd-rowley.github.io/react-portfolio",
   "private": true,
