@@ -2,8 +2,7 @@ import React from 'react';
 import './index.css';
 
 function Nav(props) {
-    const tabs = ['About', 'Portfolio', 'Resume', 'Contact'];
-
+    const tabs = ['About', 'Portfolio', 'Resume'];
     return (
         <header>
             <div className="page-location">

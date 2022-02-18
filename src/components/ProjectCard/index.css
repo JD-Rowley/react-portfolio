@@ -46,7 +46,7 @@
 
   /* project card */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .image-container {
     max-height: 100%;
   }

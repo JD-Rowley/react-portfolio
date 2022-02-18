@@ -296,7 +296,7 @@ a {
 
 /* media queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
   body {
     max-width: 90vw;
   } 
@@ -325,8 +325,7 @@ a {
   }
 
   .btn {
-    width: 80%;
-    margin: 0 3rem;
+    display: none;
   }
 
   .flex-container {

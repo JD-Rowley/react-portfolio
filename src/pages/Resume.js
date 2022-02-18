@@ -21,9 +21,32 @@ function Resume() {
                         <h3 className='skills-header'>Technical Skills</h3>
                     </div>
                     <div className='skills'>
-                        <p><b>Languages:</b> JavaScript, ES6, CSS3, HTML5, SQL, NoSQL</p>
+                        <p><b>Languages:</b> JavaScript, TypeScript, ES6, CSS3, HTML5, SQL, NoSQL</p>
                         <p><b>Applications:</b> GitHub, MongoDB, MySQL, AWS, Heroku</p>
                         <p><b>Tools:</b> Express, React, Node, Handlebars, Bootstrap</p>
+                    </div>
+                    <div className='education'>
+                        <div>
+                            <h3 className='education-header'>Education</h3>
+                        </div>
+                        <div className='education-card'>
+                            <h4>University of Utah Coding Bootcamp, Salt Lake City, UT</h4>
+                            <h5>Certificate</h5>
+                            <p><i>July 2021 - January 2022</i></p>
+                            <p className='education-info'>I've spent six months learning all I can about coding from the basics of HTML to cutting edge and widely used technology like React. I was taught numerous coding languages and how to pick up on new ones quickly.</p>
+                        </div>
+                        <div className='education-card'>
+                            <h4>Broadview Entertainment Arts University, Salt Lake City, UT</h4>
+                            <h5>Bachelor's of Fine Arts, Visual Design</h5>
+                            <p><i>October 2016 - March 2018</i></p>
+                            <p className='education-info'>Since 2016 I have pursued my degree in animation and modeling at BEAU. I have taken a number of Professional Communication courses as well as Small Business Management and entrepreneurship classes. Therefore I have some knowledge of how to conduct myself and communicate effectively in the workplace.</p>
+                        </div>
+                        <div className='education-card'>
+                            <h4>The Art Institute of Salt Lake City, Draper, UT</h4>
+                            <h5>Media Arts and Animation Coursework</h5>
+                            <p><i>January 2015 - March 2016</i></p>
+                            <p className='education-info'>The Art Institute is where I initially began my studies for 3D Animation and modeling.</p>
+                        </div>
                     </div>
                     <div className='projects'>
                         <h3 className='projects-header'>Projects</h3>
@@ -73,29 +96,6 @@ function Resume() {
                                 <li>Trusted to build product features on the sales floor.</li>
                                 <li>Handled and organized freight in within the overstock bins.</li>
                             </ul>
-                        </div>
-                    </div>
-                    <div className='education'>
-                        <div>
-                            <h3 className='education-header'>Education</h3>
-                        </div>
-                        <div className='education-card'>
-                            <h4>University of Utah Coding Bootcamp, Salt Lake City, UT</h4>
-                            <h5>Certificate</h5>
-                            <p><i>July 2021 - January 2022</i></p>
-                            <p className='education-info'>I've spent six months learning all I can about coding from the basics of HTML to cutting edge and widely used technology like React. I was taught numerous coding languages and how to pick up on new ones quickly.</p>
-                        </div>
-                        <div className='education-card'>
-                            <h4>Broadview Entertainment Arts University, Salt Lake City, UT</h4>
-                            <h5>Bachelor's of Fine Arts, Visual Design</h5>
-                            <p><i>October 2016 - March 2018</i></p>
-                            <p className='education-info'>Since 2016 I have pursued my degree in animation and modeling at BEAU. I have taken a number of Professional Communication courses as well as Small Business Management and entrepreneurship classes. Therefore I have some knowledge of how to conduct myself and communicate effectively in the workplace.</p>
-                        </div>
-                        <div className='education-card'>
-                            <h4>The Art Institute of Salt Lake City, Draper, UT</h4>
-                            <h5>Media Arts and Animation Coursework</h5>
-                            <p><i>January 2015 - March 2016</i></p>
-                            <p className='education-info'>The Art Institute is where I initially began my studies for 3D Animation and modeling.</p>
                         </div>
                     </div>
                 </div>

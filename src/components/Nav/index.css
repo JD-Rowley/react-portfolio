@@ -39,6 +39,17 @@ header {
   .nav-btns ul a:hover::before {
     transform: scaleY(1);
   }
+
+  .burger {
+    display: none;
+  }
+
+  @media (max-width: 425px)  {
+    .hamburger {
+      display: flex;
+      z-index: 10;
+    }
+  }
   
   /* header */
   
