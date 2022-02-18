@@ -15,6 +15,9 @@ function About() {
                             <p>Full stack web developer with graphic design experience educated at Southern Utah University and University of Utah. 
                                 Recently earned a certificate in full stack web development from University of Utah with newly developed skills in JavaScript, CSS, React.js and more.</p>
                         </div>
+                        {/* <div>
+                            <a href='#portolio' className='btn submit-btn'>View Portfolio</a>
+                        </div> */}
                     </div>  
                 </div>
             </div>

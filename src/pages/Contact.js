@@ -21,22 +21,22 @@ function ContactForm() {
         }
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     console.log(formState);
+    // }
 
     return(
         <section className="container contact-container">
             <div className="flex-container">
-                <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
+                <form id="contact-form" className="contact-form" action="mailto:jdrowley1989@gmail.com" method="post" encType="text/plain">
                         <label htmlFor="name">Name: </label>
                     <div>
-                        <input type="text" name="name" defaultValue={name} onChange={handleChange} />
+                        <input type="text" name="name" defaultValue={name} onChange={handleChange}/>
                     </div>
                         <label htmlFor="email">Email Address: </label>
                     <div>
-                        <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                        <input type="email" name="email" defaultValue={email} onBlur={handleChange}/>
                     </div>
                         <label htmlFor="message">Message: </label>
                     <div className="message-container">
@@ -47,7 +47,7 @@ function ContactForm() {
                             <p>{errorMessage}</p>
                         </div>
                     )}
-                    <button type="submit" className="btn submit-btn" onSubmit={handleSubmit}>Submit</button>
+                    <button type="submit" className="btn submit-btn">Submit</button>
                 </form>
             </div>
         </section>

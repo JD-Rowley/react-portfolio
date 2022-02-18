@@ -1,14 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c393708b.chunk.css",
-    "main.js": "/static/js/main.2c1a060f.chunk.js",
-    "main.js.map": "/static/js/main.2c1a060f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d64cb1c7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d64cb1c7.js.map",
+    "main.js": "/static/js/main.0af2e1b9.chunk.js",
+    "main.js.map": "/static/js/main.0af2e1b9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fb7fa0a0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fb7fa0a0.js.map",
     "static/js/2.875407d5.chunk.js": "/static/js/2.875407d5.chunk.js",
     "static/js/2.875407d5.chunk.js.map": "/static/js/2.875407d5.chunk.js.map",
-    "static/js/3.a167d3f6.chunk.js": "/static/js/3.a167d3f6.chunk.js",
-    "static/js/3.a167d3f6.chunk.js.map": "/static/js/3.a167d3f6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.c393708b.chunk.css.map": "/static/css/main.c393708b.chunk.css.map",
     "static/js/2.875407d5.chunk.js.LICENSE.txt": "/static/js/2.875407d5.chunk.js.LICENSE.txt",
@@ -32,9 +30,9 @@
     "static/media/weather-dashboard.6614e23a.JPG": "/static/media/weather-dashboard.6614e23a.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.d64cb1c7.js",
+    "static/js/runtime-main.fb7fa0a0.js",
     "static/js/2.875407d5.chunk.js",
     "static/css/main.c393708b.chunk.css",
-    "static/js/main.2c1a060f.chunk.js"
+    "static/js/main.0af2e1b9.chunk.js"
   ]
 }
