@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.e223153c.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.a25585b7.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.a25585b7.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.6f8823fb.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.6f8823fb.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.37b83d9e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.37b83d9e.js.map",
     "static/js/2.875407d5.chunk.js": "/react-portfolio/static/js/2.875407d5.chunk.js",
@@ -22,6 +22,7 @@
     "static/media/password-generator.3aae780a.JPG": "/react-portfolio/static/media/password-generator.3aae780a.JPG",
     "static/media/permaculture-exchange.d0259eb4.JPG": "/react-portfolio/static/media/permaculture-exchange.d0259eb4.JPG",
     "static/media/readme-generator.8ba37e7b.JPG": "/react-portfolio/static/media/readme-generator.8ba37e7b.JPG",
+    "static/media/recipe-book.35b2232b.JPG": "/react-portfolio/static/media/recipe-book.35b2232b.JPG",
     "static/media/run-buddy.d6ada82c.JPG": "/react-portfolio/static/media/run-buddy.d6ada82c.JPG",
     "static/media/select-and-share.0555da8a.JPG": "/react-portfolio/static/media/select-and-share.0555da8a.JPG",
     "static/media/social-network-api.d0491a05.JPG": "/react-portfolio/static/media/social-network-api.d0491a05.JPG",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.37b83d9e.js",
     "static/js/2.875407d5.chunk.js",
     "static/css/main.e223153c.chunk.css",
-    "static/js/main.a25585b7.chunk.js"
+    "static/js/main.6f8823fb.chunk.js"
   ]
 }
