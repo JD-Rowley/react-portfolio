@@ -23,7 +23,7 @@ function Resume() {
                     <div className='skills'>
                         <p><b>Languages:</b> JavaScript, TypeScript, ES6, CSS3, HTML5, SQL, NoSQL</p>
                         <p><b>Applications:</b> GitHub, MongoDB, MySQL, AWS, Heroku</p>
-                        <p><b>Tools:</b> Express, React, Node, Handlebars, Bootstrap</p>
+                        <p><b>Tools:</b> Express, React, Angular, Node, Handlebars, Bootstrap</p>
                     </div>
                     <div className='education'>
                         <div>
@@ -62,8 +62,16 @@ function Resume() {
                             <p><b>Permaculture Exchange</b> || <a href='https://github.com/JD-Rowley/permaculture-exchange'>/permaculture-exchange</a> || <a href='https://permaculture-exchange.herokuapp.com/'>permaculture-exchange.herokuapp.com</a></p>
                             <ul className='projects-list'>
                                 <li><b>Description:</b> Website for users to share ideas with each other.</li>
-                                <li><b>Role:</b> Sole author</li>
+                                <li><b>Role:</b> Front End Designer</li>
                                 <li><b>Tools:</b> HTML, CSS, JavaScript, Bootstrap, Express, Handlebars, MySQL</li>
+                            </ul>
+                        </div>
+                        <div className='projects-card'>
+                            <p><b>Recipe Book</b> || <a href='https://github.com/JD-Rowley/recipe-book'>/recipe-book</a> || <a href='https://recipe-book-d0f8b.web.app/'>recipe-book-d0f8b.web.app/</a></p>
+                            <ul className='projects-list'>
+                                <li><b>Description:</b> An app to keep track of recipe ideas.</li>
+                                <li><b>Role:</b> Sole Author</li>
+                                <li><b>Tools:</b> HTML, CSS, TypeScript, Angular, Bootstrap, Firebase</li>
                             </ul>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import permacultureExchange from '../assets/project_img/permaculture-exchange.JP
 import techBlog from '../assets/project_img/tech-blog.JPG';
 import eCommerce from '../assets/project_img/e-commerce-backend.JPG';
 import LocalGrub from '../assets/project_img/LocalGrub.JPG';
+import recipeBook from '../assets/project_img/recipe-book.JPG';
 import noteTaker from '../assets/project_img/note-taker.JPG';
 import socialNetwork from '../assets/project_img/social-network-api.JPG';
 import teamProfile from '../assets/project_img/team-profile-generator.JPG';
@@ -54,6 +55,15 @@ const projects =
         "description": "A website designed to cloak domestic violence shelter searches and user requests for 911 assistance.",
         "languages": "HTML, CSS, JavaScript",
         "image": LocalGrub
+    },
+    {
+        "title": "Recipe Book",
+        "deploy": "https://recipe-book-d0f8b.web.app/",
+        "github_url": "https://github.com/JD-Rowley/recipe-book",
+        "github": "recipe-book",
+        "description": "An app created using Angular and TypeScript that allows the user to look up recipes and create ingredient lists.",
+        "languages": "TypeScript, Angular, Firebase, Node.js",
+        "image": recipeBook
     },
     {
         "title": "Budget Tracker",
