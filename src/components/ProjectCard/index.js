@@ -6,15 +6,15 @@ function ProjectCard(props) {
     return(
         <div className='project-card'>
             <div className='card-header'>
-                <a href={props.deploy} target='_blank' rel='noreferrer'><h3>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3></a>
-                <div className='image-container'>
-                    <img src={props.image} width='100%' alt={props.title} key={props.title} />
-                </div>
+                <a href={props.deploy} target='_blank' rel='noreferrer'><h3>
+                    {props.title} {props.deploy !== null && <FaExternalLinkAlt />}
+                </h3></a>
             </div>
             <ul>
-                <li><b>GitHub:</b> <a href={props.github_url} className='github-link'>{props.github}</a></li>
+                <li><b>GitHub:</b> <a href={props.github} className='github-link'>{props.title}</a></li>
                 <li><b>Description: </b>{props.description}</li>
-                <li><b>Languages/Tools: </b>{props.languages}</li>
+                <li><b>Language: </b>{props.language}</li>
+                <li><b>Tools: </b>{props.tools}</li>
             </ul>
         </div>
     );

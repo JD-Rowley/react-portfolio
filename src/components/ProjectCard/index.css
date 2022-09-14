@@ -1,9 +1,9 @@
 /* project card */
 
 .card-header {
-    background-color: var(--primary);
-    border-top-right-radius: 10px;
+    background: none;
     padding: .5rem;
+    transition: background 300ms ease-in-out;
   }
   
   .card-header a {
@@ -22,8 +22,9 @@
   }
   
   .project-card ul {
-    border: 1px solid var(--primary);
-    border-bottom-left-radius: 10px;
+    border-top: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    border-top-left-radius: 10px;
     padding: 1rem;
   }
   
@@ -36,14 +37,13 @@
     color: var(--primary);
   }
   
-  .project-card a h3 {
-    transition: transform 300ms ease-in-out;
+  .card-header:hover {
+    background: radial-gradient(ellipse farthest-side at left center, #FF0000 0%, transparent 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: background 300ms ease-in-out;
   }
   
-  .project-card a h3:hover {
-    transform:scale(1.1);
-  }
-
   /* project card */
 
 @media screen and (max-width: 900px) {
