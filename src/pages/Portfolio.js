@@ -1,17 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Carousel from '../components/Carousel';
 import ProjectCard from '../components/ProjectCard';
 
+import autoAnimate from '@formkit/auto-animate';
+
 function Project() {
     const API_URL = "https://api.github.com/users/jd-rowley/repos?per_page=100";
+    const parentRef = useRef(null);
+
+    useEffect(() => {
+        if(parentRef.current) {
+            autoAnimate(parentRef.current);
+        }
+    }, [parentRef])
+
     const [ repoData, setRepoData ] = useState(() => {
         fetch(API_URL)
         .then((res) => {
             if(res.ok) {
                 res.json().then((data) => {
                     if(data) {
-                        const projects = data.filter(project => project.description !== null)
-                        const filteredProjects = projects.map(project => {
+                        const filterProjects = data.filter(project => project.description !== null)
+                        const projects = filterProjects.map(project => {
                             return <ProjectCard 
                                 key = {project.id}
                                 deploy = {project.homepage}
@@ -22,7 +32,7 @@ function Project() {
                                 tools = {project.topics.toString().split(',').join(', ')}             
                             />
                     });
-                        setRepoData(filteredProjects); 
+                        setRepoData(projects); 
                     } else {
                         return "No repos found..."
                     }
@@ -34,7 +44,6 @@ function Project() {
         .catch(err => {
             alert("Unable to connect to GitHub...");
         })
-
     });
 
     return(
@@ -43,7 +52,7 @@ function Project() {
             <div className="other-projects">
             <h2>Projects:</h2>
             </div>
-            <div className="projects-container">
+            <div className="projects-container" ref={parentRef}>
                 {repoData}
             </div>
         </section>
