@@ -2,7 +2,7 @@
 
 .card-header {
     background: none;
-    padding: .5rem;
+    /* padding: .5rem; */
     transition: background 300ms ease-in-out;
   }
   
@@ -36,13 +36,62 @@
   ul li b {
     color: var(--primary);
   }
+
+  .card-header-btn {
+    background-color: var(--primary);
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    /* margin-top: 1.5rem; */
+    position: relative;
+    transition: color 300ms ease-in-out;
+  }
   
-  .card-header:hover {
+
+  .card-btn {
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--secondary);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .card-btn:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .card-btn {
+    z-index: 1;
+  }
+  
+  .card-btn:hover {
+    color: var(--primary);
+  }
+  
+  /* contact form */
+  
+  
+  /* .card-header:hover {
     background: radial-gradient(ellipse farthest-side at left center, #FF0000 0%, transparent 100%);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     transition: background 300ms ease-in-out;
-  }
+  } */
   
   /* project card */
 

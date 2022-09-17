@@ -6,7 +6,7 @@ function ProjectCard(props) {
     return(
         <div className='project-card'>
             <div className='card-header'>
-                <a href={props.deploy} target='_blank' rel='noreferrer'><h3>
+                <a href={props.deploy} target='_blank' rel='noreferrer'><h3 className='card-header-btn card-btn'>
                     {props.title} {props.deploy !== null && <FaExternalLinkAlt />}
                 </h3></a>
             </div>
