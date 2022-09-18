@@ -32,7 +32,7 @@ function Project() {
                                 language = {project.language}
                                 tools = {project.topics.toString().split(',').join(', ')}             
                             />
-                    });
+                        });
                         setRepoData(projects); 
                     } else {
                         return "No repos found..."
