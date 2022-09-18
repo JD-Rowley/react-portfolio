@@ -1,6 +1,5 @@
 :root {
-  --primary: rgba(255, 0, 0, 1);
-  --primary-hover: rgba(255, 0, 0, 0.4);
+  --primary: red;
   --secondary: white;
 }
 

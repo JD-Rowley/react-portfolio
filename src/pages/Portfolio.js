@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Carousel from '../components/Carousel';
 import ProjectCard from '../components/ProjectCard';
+import SearchBar from '../components/SearchBar';
 
 import autoAnimate from '@formkit/auto-animate';
 
 function Project() {
-    const API_URL = "https://api.github.com/users/jd-rowley/repos?per_page=100";
+    const API_URL = "https://api.github.com/users/jd-rowley/repos?per_page=100&sort=created_at";
     const parentRef = useRef(null);
 
     useEffect(() => {
@@ -50,7 +51,8 @@ function Project() {
         <section className="container">
             <Carousel />
             <div className="other-projects">
-            <h2>Projects:</h2>
+                <h2>Projects:</h2>
+                <SearchBar />
             </div>
             <div className="projects-container" ref={parentRef}>
                 {repoData}
