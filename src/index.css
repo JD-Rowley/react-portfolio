@@ -141,12 +141,32 @@ section {
   font-weight: lighter;
   padding: 1rem;
 }
+
+.search-container {
+  margin: auto 1rem;
+}
+
+.drop-down,
+.drop-down div {
+  color: black;
+  margin: none;
+  z-index: 10;
+}
+
+.drop-down div:hover {
+  color: var(--secondary);
+}
     
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3rem;
   margin: 3rem;
+}
+
+.loading {
+  width: 30vw;
+  margin: auto;
 }
 
 /* projects */
