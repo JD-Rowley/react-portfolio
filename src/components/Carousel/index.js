@@ -6,7 +6,7 @@ import './index.css';
 
 function Carousel() {
     const [current, setCurrent] = useState(0);
-    const length = projects.slice(0, 3).length;
+    const length = projects.length;
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -23,7 +23,7 @@ function Carousel() {
     return (
         <section className='carousel'>
             <FaChevronLeft className='slide-btn prev' onClick={prevSlide} />
-            {projects.slice(0, 3).map((project, index) => {
+            {projects.map((project, index) => {
                 return (
                     <div className={index === current ? 'slide-active slide' : 'slide-inactive slide'} key={index}>
                         {index === current && (
@@ -34,7 +34,8 @@ function Carousel() {
                                 github_url={project.github_url}
                                 github={project.github}
                                 description={project.description}
-                                languages={project.languages}
+                                language={project.language}
+                                tools={project.tools}
                                 image={project.image}
                             /> 
                         )}

@@ -2,7 +2,7 @@
 
 .carousel {
     position: relative;
-    height: 40vh;
+    aspect-ratio: 16/8;
     width: auto;
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ ul li {
 }
     
 .slide-img {
-    max-width: 90%;
+    max-width: 35vw;
     height: auto;
     object-fit: cover;
 }

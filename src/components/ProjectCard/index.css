@@ -2,7 +2,6 @@
 
 .card-header {
     background: none;
-    /* padding: .5rem; */
     transition: background 300ms ease-in-out;
   }
   
