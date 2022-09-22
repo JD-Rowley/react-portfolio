@@ -140,7 +140,12 @@ body {
 }
 
 .search-container {
+  display: flex;
   margin: auto 1rem;
+}
+
+.drop-down {
+  margin: 0 1rem 0 0;
 }
 
 .drop-down,

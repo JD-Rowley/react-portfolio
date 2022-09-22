@@ -18,7 +18,6 @@ function Project() {
         }
     }, [parentRef])
 
-    const [language, setLanguage] = useState({});
     // access github API and find all projects with a description and apply props to the ProjectCard component
     const [ repoData, setRepoData ] = useState(() => {
         trackPromise(
@@ -107,6 +106,40 @@ function Project() {
         )
     }
 
+    function recallAllProjects() {
+        trackPromise(
+            fetch(API_URL)
+            .then((res) => {
+                if(res.ok) {
+                    res.json().then((data) => {
+                        if(data) {
+                            const filterProjects = data.filter(project => project.description !== null)
+                            const projects = filterProjects.map(project => {
+                                return <ProjectCard 
+                                    key = {project.id}
+                                    deploy = {project.homepage}
+                                    title = {project.name}
+                                    github = {project.html_url}
+                                    description = {project.description}
+                                    language = {project.language}
+                                    tools = {project.topics.toString().split(',').join(', ')}             
+                                />
+                            });
+                            setRepoData(projects); 
+                        } else {
+                            return "No repos found..."
+                        }
+                    });
+                } else {
+                    return "Something went wrong...";
+                }
+            }))
+            .catch(err => {
+                alert("Unable to connect to GitHub...");
+            }
+        );    
+    }
+
     function customTheme(theme) {
         return{
             ...theme,
@@ -131,6 +164,13 @@ function Project() {
                         placeholder='Select a Language...'
                         onChange={filterByLanguage}
                     />
+                    <button
+                        type='click'
+                        className='card-header-btn card-btn'  
+                        onClick={recallAllProjects}              
+                    >
+                        Show All
+                    </button>
                 </div>
             </div>
             <div>
