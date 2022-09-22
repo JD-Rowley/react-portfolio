@@ -82,20 +82,10 @@
     color: var(--primary);
   }
   
-  /* contact form */
-  
-  
-  /* .card-header:hover {
-    background: radial-gradient(ellipse farthest-side at left center, #FF0000 0%, transparent 100%);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transition: background 300ms ease-in-out;
-  } */
-  
   /* project card */
 
 @media screen and (max-width: 900px) {
-  .image-container {
-    max-height: 100%;
+  .project-card {
+    max-width: 100vw;
   }
 }  

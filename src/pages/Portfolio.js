@@ -76,6 +76,37 @@ function Project() {
             });
     });
 
+    function filterByLanguage(event) {
+        trackPromise(
+        fetch(API_URL)
+            .then(res => {
+                if(res.ok) {
+                    res.json().then((data) => {
+                        if(data) {
+                            const filterProjects = data.filter(project => (project.description !== null && project.language === event.value))
+                            const projects = filterProjects.map(project => {
+                                return <ProjectCard 
+                                    key = {project.id}
+                                    deploy = {project.homepage}
+                                    title = {project.name}
+                                    github = {project.html_url}
+                                    description = {project.description}
+                                    language = {project.language}
+                                    tools = {project.topics.toString().split(',').join(', ')}             
+                                />
+                            });
+                            setRepoData(projects); 
+                        } else {
+                            return "No repos found..."
+                        }
+                    });
+                } else {
+                    return "Something went wrong...";
+                }
+            })
+        )
+    }
+
     function customTheme(theme) {
         return{
             ...theme,
@@ -98,7 +129,7 @@ function Project() {
                         options={languageData}
                         className='drop-down'
                         placeholder='Select a Language...'
-                        onChange={setLanguage}
+                        onChange={filterByLanguage}
                     />
                 </div>
             </div>
