@@ -1,7 +1,8 @@
 {
   "name": "react-portfolio",
-  "main": "index.html",
+  "main": "index.js",
   "version": "0.1.0",
+  "homepage": "http://jd-rowley.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.3",
