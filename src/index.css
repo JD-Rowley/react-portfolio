@@ -171,6 +171,10 @@ body {
   margin: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 /* projects */
 
 /* resume */

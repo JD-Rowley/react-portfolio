@@ -27,7 +27,7 @@ function ProjectCard(props) {
                 </h3></a>
             </div>
             <ul>
-                <li><b>GitHub:</b> <a href={props.github} className='github-link'>{props.title}</a></li>
+                <li><b>GitHub:</b> <a href={props.github} className='github-link'>{props.githubtitle}</a></li>
                 <li><b>Description: </b>{props.description}</li>
                 <li><b>Language: </b>{props.language}</li>
                 <li><b>Tools: </b>{props.tools}</li>

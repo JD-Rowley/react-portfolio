@@ -7,7 +7,7 @@ import { usePromiseTracker, trackPromise } from 'react-promise-tracker';
 
 import autoAnimate from '@formkit/auto-animate';
 
-function Project() {
+function Portfolio() {
     const API_URL = "https://api.github.com/users/jd-rowley/repos?per_page=100&sort=created_at";
     const parentRef = useRef(null);
     const { promiseInProgress } = usePromiseTracker();
@@ -22,31 +22,32 @@ function Project() {
     const [ repoData, setRepoData ] = useState(() => {
         trackPromise(
         fetch(API_URL)
-        .then((res) => {
-            if(res.ok) {
-                res.json().then((data) => {
-                    if(data) {
-                        const filterProjects = data.filter(project => project.description !== null)
-                        const projects = filterProjects.map(project => {
-                            return <ProjectCard 
-                                key = {project.id}
-                                deploy = {project.homepage}
-                                title = {project.name}
-                                github = {project.html_url}
-                                description = {project.description}
-                                language = {project.language}
-                                tools = {project.topics.toString().split(',').join(', ')}             
-                            />
-                        });
-                        setRepoData(projects); 
-                    } else {
-                        return "No repos found..."
-                    }
-                });
-            } else {
-                return "Something went wrong...";
-            }
-        }))
+            .then((res) => {
+                if(res.ok) {
+                    res.json().then((data) => {
+                        if(data) {
+                            const filterProjects = data.filter(project => project.description !== null)
+                            const projects = filterProjects.map(project => {
+                                return <ProjectCard 
+                                    key = {project.id}
+                                    deploy = {project.homepage}
+                                    title = {project.name.replaceAll('-', ' ').toUpperCase()}
+                                    github = {project.html_url}
+                                    githubtitle = {project.name}
+                                    description = {project.description}
+                                    language = {project.language}
+                                    tools = {project.topics.toString().split(',').join(', ')}             
+                                />
+                            });
+                            setRepoData(projects);
+                        } else {
+                            return "No repos found..."
+                        }
+                    });
+                } else {
+                    return "Something went wrong...";
+                }
+            }))
         .catch(err => {
             alert("Unable to connect to GitHub...");
         })
@@ -87,14 +88,15 @@ function Project() {
                                 return <ProjectCard 
                                     key = {project.id}
                                     deploy = {project.homepage}
-                                    title = {project.name}
+                                    title = {project.name.split('-').join(' ').toUpperCase()}
                                     github = {project.html_url}
+                                    githubtitle = {project.name}
                                     description = {project.description}
                                     language = {project.language}
                                     tools = {project.topics.toString().split(',').join(', ')}             
                                 />
                             });
-                            setRepoData(projects); 
+                            setRepoData(projects);
                         } else {
                             return "No repos found..."
                         }
@@ -108,7 +110,7 @@ function Project() {
 
     function recallAllProjects() {
         trackPromise(
-            fetch(API_URL)
+        fetch(API_URL)
             .then((res) => {
                 if(res.ok) {
                     res.json().then((data) => {
@@ -118,14 +120,15 @@ function Project() {
                                 return <ProjectCard 
                                     key = {project.id}
                                     deploy = {project.homepage}
-                                    title = {project.name}
+                                    title = {project.name.split('-').join(' ').toUpperCase()}
                                     github = {project.html_url}
+                                    githubtitle = {project.name}
                                     description = {project.description}
                                     language = {project.language}
                                     tools = {project.topics.toString().split(',').join(', ')}             
                                 />
                             });
-                            setRepoData(projects); 
+                            setRepoData(projects);
                         } else {
                             return "No repos found..."
                         }
@@ -166,8 +169,8 @@ function Project() {
                     />
                     <button
                         type='click'
-                        className='card-header-btn card-btn'  
-                        onClick={recallAllProjects}              
+                        className={'card-header-btn card-btn'}  
+                        onClick={recallAllProjects}
                     >
                         Show All
                     </button>
@@ -187,4 +190,4 @@ function Project() {
     );
 }
 
-export default Project;
+export default Portfolio;
