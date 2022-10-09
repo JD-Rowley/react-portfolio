@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Carousel from '../components/Carousel';
 import ProjectCard from '../components/ProjectCard';
-import Select from 'react-select';
 import { ProgressBar } from 'loading-animations-react';
 import { usePromiseTracker, trackPromise } from 'react-promise-tracker';
+import { updateTitle, updateTopics } from '../utils/utils';
 
 import autoAnimate from '@formkit/auto-animate';
+import SearchBar from '../components/SearchBar';
 
 function Portfolio() {
     const API_URL = "https://api.github.com/users/jd-rowley/repos?per_page=100&sort=created_at";
@@ -31,12 +32,12 @@ function Portfolio() {
                                 return <ProjectCard 
                                     key = {project.id}
                                     deploy = {project.homepage}
-                                    title = {project.name.replaceAll('-', ' ').toUpperCase()}
+                                    title = {updateTitle(project.name)}
                                     github = {project.html_url}
                                     githubtitle = {project.name}
                                     description = {project.description}
                                     language = {project.language}
-                                    tools = {project.topics.toString().split(',').join(', ')}             
+                                    tools = {updateTopics(project.topics)}             
                                 />
                             });
                             setRepoData(projects);
@@ -53,29 +54,6 @@ function Portfolio() {
         })
     });
 
-    // access API and loop through projects to find available languages for the dropdown bar
-    const [languageData, setLanguageData] = useState(() => {
-        fetch(API_URL)
-            .then((res) => {
-                if(res.ok) {
-                    res.json().then((data) => {
-                        if(data) {
-                            const filterProjects = data.filter(project => project.description !== null)
-                            const filterLanguages = filterProjects.filter((language, index, self) => 
-                                index === self.findIndex((obj) => (obj.language === language.language))
-                            );
-                            const languages = filterLanguages.map(l => {
-                                return(
-                                    { key: l.id, value: l.language, label: l.language }
-                                )
-                            });
-                            setLanguageData(languages);
-                        }
-                    });
-                }
-            });
-    });
-
     function filterByLanguage(event) {
         trackPromise(
         fetch(API_URL)
@@ -88,12 +66,12 @@ function Portfolio() {
                                 return <ProjectCard 
                                     key = {project.id}
                                     deploy = {project.homepage}
-                                    title = {project.name.split('-').join(' ').toUpperCase()}
+                                    title = {updateTitle(project.name)}
                                     github = {project.html_url}
                                     githubtitle = {project.name}
                                     description = {project.description}
                                     language = {project.language}
-                                    tools = {project.topics.toString().split(',').join(', ')}             
+                                    tools = {updateTopics(project.topics)}             
                                 />
                             });
                             setRepoData(projects);
@@ -120,12 +98,12 @@ function Portfolio() {
                                 return <ProjectCard 
                                     key = {project.id}
                                     deploy = {project.homepage}
-                                    title = {project.name.split('-').join(' ').toUpperCase()}
+                                    title = {updateTitle(project.name)}
                                     github = {project.html_url}
                                     githubtitle = {project.name}
                                     description = {project.description}
                                     language = {project.language}
-                                    tools = {project.topics.toString().split(',').join(', ')}             
+                                    tools = {updateTopics(project.topics)}             
                                 />
                             });
                             setRepoData(projects);
@@ -143,16 +121,8 @@ function Portfolio() {
         );    
     }
 
-    function customTheme(theme) {
-        return{
-            ...theme,
-            colors: {
-                ...theme.colors,
-                primary25: 'var(--primary)',
-                primary: 'var(--primary)',
-            }
-        }
-    }
+    // const select = selectRef.current;
+    // console.log(select);
 
     return(
         <section className="container">
@@ -160,11 +130,7 @@ function Portfolio() {
             <div className="other-projects">
                 <h2>Projects:</h2>
                 <div className='search-container'>
-                    <Select 
-                        theme={customTheme}
-                        options={languageData}
-                        className='drop-down'
-                        placeholder='Select a Language...'
+                    <SearchBar
                         onChange={filterByLanguage}
                     />
                     <button
